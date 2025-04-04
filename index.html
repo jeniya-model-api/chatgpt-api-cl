@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>ChatGPT中文版API|API中转站AI大模型|免费Claude API/Deepseek API</title>
+    <meta name="description" content="2025年专业AI大模型API中转服务，提供ChatGPT API、Claude API、Deepseek API等免费API接口。支持GPT-4o/o1，Claude 3.5 Sonnet，Deepseek Coder等高级模型，低成本稳定快速，支持国内直连，API Key一键获取，注册即送免费额度！">
+    <meta name="keywords" content="API中转站,中转站API,大模型API,AI API,AI API平台,AI API接口,大模型免费API,免费大模型API,免费API,免费API接口,ChatGPT API,OpenAI API key,ChatGPT API key,Claude API,GPT API,Deepseek API,Deepseek API key">
+    <meta property="og:title" content="【2025年最新】AI大模型API中转站 | 简易免费API服务">
+    <meta property="og:description" content="专业AI大模型API中转平台，提供ChatGPT/Claude/Deepseek免费API接口。支持GPT-4o/o1，Claude 3.5，Deepseek等全系列模型，国内直连稳定快速，注册即送免费额度！">
+    <meta property="og:url" content="https://maxfly-api.github.io/chatgpt-api-chinese">
+    <meta property="twitter:title" content="【2025年最新】AI大模型API中转站 | 简易免费API服务">
+    <meta property="twitter:description" content="专业AI大模型API中转平台，提供ChatGPT/Claude/Deepseek免费API接口。支持GPT-4o/o1，Claude 3.5，Deepseek等全系列模型，国内直连稳定快速，注册即送免费额度！">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta charSet="utf-8" />
+    <meta http-equiv='content-language' content='zh-CN'>
+    <link rel="icon" href="/openai.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msvalidate.01" content="36CC1147BAC558447DA0D92095C7B6FA" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .content {
+            text-align: center;
+            max-width: 800px;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: -webkit-linear-gradient(45deg, var(--color-1), var(--color-2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            font-size: 24px;
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 24px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, var(--color-1), var(--color-2));
+            z-index: -1;
+            opacity: 0.8;
+        }
+        .arrow-down {
+            position: absolute;
+            bottom: 20px;
+            cursor: pointer;
+            font-size: 32px;
+            color: #007bff;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* New Section Styles */
+        .markdown-content {
+            padding: 40px;
+            background-color: #00A2E8;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .markdown-content h2 {
+            font-size: 36px;
+            margin-top: 20px;
+        }
+        .markdown-content p, .markdown-content li {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .markdown-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .markdown-content th, .markdown-content td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: left;
+        }
+        .markdown-content th {
+            background-color: #333;
+        }
+
+        /* Mobile Styles */
+        @media screen and (max-width: 767px) {
+            .container {
+                min-height: auto;
+                padding-top: 150px;
+                padding-bottom: 20px;
+            }
+            h1 {
+                font-size: 36px;
+            }
+            p {
+                font-size: 18px;
+            }
+            .button {
+                font-size: 20px;
+                padding: 10px 20px;
+            }
+            .markdown-content {
+                padding: 20px;
+            }
+            .markdown-content h2 {
+                font-size: 28px;
+            }
+            .markdown-content p, .markdown-content li {
+                font-size: 16px;
+            }
+            .markdown-content table {
+                display: block;
+                overflow-x: auto;
+                width: 100%;
+            }
+            .markdown-content th, .markdown-content td {
+                white-space: nowrap;
+            }
+            .arrow-down {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="content">
+            <h1>AI大模型API中转站 - 2025最新免费API服务</h1>
+            <h2>一站式解决ChatGPT API、Claude API、Deepseek API接口需求</h2>
+            <h2>🔥 国内直连 | ⚡ 低成本 | 💯 7×24稳定服务</h2>
+            <a href="https://jeniya.cn" target="_self" class="button">免费注册领取API额度</a>
+            <h3>实时更新：<strong id="curdate"></strong></h3>
+        </div>
+        <div class="arrow-down" onclick="scrollToContent()">⬇️ 查看更多API中转服务</div>
+    </div>
+
+    <!-- Second Screen Content -->
+    <section class="markdown-content" id="more-content">
+
+        <blockquote>
+        <p>【2025最新】<strong>AI大模型API中转站完全指南</strong> — 提供ChatGPT、Claude、Deepseek等<strong>免费API接口</strong>，让AI开发无障碍！</p>
+    </blockquote>
+    <p>简易提供<strong>专业AI大模型API中转服务</strong>，解决国内开发者API访问难题，支持各类主流大模型API接口调用。</p>
+    <p>无需科学上网，即可稳定使用<strong>OpenAI API、Claude API和Deepseek API</strong>等服务！让AI为您的应用开发提供强大助力！</p>
+
+    <h2>为什么选择简易 API中转站？</h2>
+    <p><strong>简易 API中转站</strong>是专为中国开发者和企业打造的AI大模型API服务平台，提供比官方渠道更便捷、更稳定的体验。</p>
+    <p>选择我们的<strong>API中转服务</strong>的五大核心优势：</p>
+    <ul>
+        <li>✅ <strong>国内直连</strong>：无需科学上网工具，直接访问，延迟低至50ms</li>
+        <li>✅ <strong>平台稳定</strong>：7×24小时稳定服务，99.9%可用性保障，企业级SLA</li>
+        <li>✅ <strong>成本优势</strong>：比官方渠道低20-40%的价格，按量计费更经济</li>
+        <li>✅ <strong>全模型支持</strong>：覆盖ChatGPT-4o、Claude 3.5、Deepseek等全系列热门模型</li>
+        <li>✅ <strong>即开即用</strong>：注册即送免费测试额度，5分钟内完成API集成</li>
+    </ul>
+
+    <h2>【2025年3月】支持的热门API服务</h2>
+    <p>我们提供市面上最全面的<strong>AI大模型API接口</strong>，包括：</p>
+    <ul>
+        <li><a href="https://jeniya.cn" target="_blank"><strong>OpenAI API</strong></a> - 支持GPT-3.5/4/4o/o1/o3全系列模型，提供文本生成、图像生成、语音转文本等功能。<span style="color:#ff4d4d;">热度：★★★★★</span></li>
+        <li><a href="https://jeniya.cn" target="_blank"><strong>Claude API</strong></a> - 支持Claude 3 Opus/Sonnet/Haiku系列，擅长长文本理解与创作。<span style="color:#ff4d4d;">热度：★★★★☆</span></li>
+        <li><a href="https://jeniya.cn" target="_blank"><strong>Deepseek API</strong></a> - 中国最强大模型之一，支持Deepseek Chat和Deepseek:#ff4d4d;">热度：★★★★★</span></li>
+        <li><a href="https://jeniya.cn" target="_blank"><strong>更多API服务</strong></a> - 包括百度文心一言、Gemini、Llama 3等多种模型API接口。<span style="color:#ff4d4d;">持续更新中</span></li>
+    </ul>
+
+    <h2>API中转站官方VS 简易：全方位对比</h2>
+    <table border="1">
+        <tr>
+            <th>对比项</th>
+            <th>官方API服务</th>
+            <th>简易 API中转站</th>
+        </tr>
+        <tr>
+            <td><strong>访问方式</strong></td>
+            <td>需要科学上网</td>
+            <td>✅ 国内直接访问，无需任何工具</td>
+        </tr>
+        <tr>
+            <td><strong>接口延迟</strong></td>
+            <td>200-500ms不等</td>
+            <td>✅ 优化至50-100ms，响应更快</td>
+        </tr>
+        <tr>
+            <td><strong>模型支持</strong></td>
+            <td>单一平台模型</td>
+            <td>✅ 一站式接入所有主流大模型API</td>
+        </tr>
+        <tr>
+            <td><strong>成本</strong></td>
+            <td>官方定价，美元结算</td>
+            <td>✅ 比官方低20-40%，人民币付款</td>
+        </tr>
+        <tr>
+            <td><strong>接口文档</strong></td>
+            <td>英文为主，理解困难</td>
+            <td>✅ 全中文接口文档，示例代码丰富</td>
+        </tr>
+        <tr>
+            <td><strong>计费方式</strong></td>
+            <td>预充值，最低充值额度高</td>
+            <td>✅ 按量计费，无最低消费要求</td>
+        </tr>
+        <tr>
+            <td><strong>技术支持</strong></td>
+            <td>邮件支持，响应慢</td>
+            <td>✅ 7×24中文技术支持，微信群交流</td>
+        </tr>
+    </table>
+
+    <p><strong>专家建议：</strong>对于中国开发者和企业，务提供更便捷、更经济的AI API接入方案，是国内AI开发的理想选择。</p>
+
+    <h2>【图文教程】如何使用简易 API中转服务？</h2>
+    <ol>
+        <li><strong>第一步：</strong>访问<a href="https://jeniya.cn/register" target="_blank">简易官网</a>完成注册</li>
+        <li><strong>第二步：</strong>登录后进入控制台，创建API密钥</li>
+        <li><strong>第三步：</strong>选择需要使用的API服务（OpenAI/Claude/Deepseek等）</li>
+        <li><strong>第四步：</strong>根据文档说明调整API请求地址，开始集成</li>
+        <li><strong>第五步：</strong>充值账户或使用免费赠送额度开始API调用</li>
+    </ol>
+
+    <h2>API示例代码（Python）</h2>
+    <pre><code>
+# OpenAI API调用示例
+import requests
+
+API_KEY = "your_简易_api_key"
+API_URL = "https://api.jeniya.cn/v1/chat/completions"
+
+headers = {
+    "Authorization": f"Bearer {API_KEY}",
+    "Content-Type": "application/json"
+}
+
+data = {
+    "model": "gpt-4o",
+    "messages": [
+        {"role": "system", "content": "你是一个专业助手"},
+        {"role": "user", "content": "请解释API中转站的作用"}
+    ]
+}
+
+response = requests.post(API_URL, headers=headers, json=data)
+print(response.json())
+    </code></pre>
+
+    <h2>简易 API中转站常见问题解答</h2>
+    <h3>1. API中转服务安全吗？我的数据会被保存吗？</h3>
+    <p>简易采用端到端加密技术，仅作为请求转发，不存储您的对话内容。我们通过了ISO27001信息安全认证，确保您的数据安全。</p>
+
+    <h3>2. API访问速度如何？会有延迟问题吗？</h3>
+    <p>我们在国内多地部署了服务器节点，平均响应延迟仅为50-100ms，比直接访问官方API快3-5倍，满足生产环境需求。</p>
+
+    <h3>3. 如何获取API密钥（API Key）？</h3>
+    <p>注册简易账户后，在控制台的"API管理"页面可以一键创建API密钥。新用户注册即送100元免费测试额度，无需信用卡。</p>
+
+    <h3>4. 支持哪些编程语言和框架？</h3>
+    <p>我们提供Python、Node.js、Java、Go、PHP等多种语言的SDK和示例代码，与官方API保持高度兼容，修改endpoint即可无缝迁移。</p>
+
+    <h3>5. 计费方式是怎样的？</h3>
+    <p>采用与官方相同的tokens计费模式，但支持预充值和按量付费两种方式，满足不同规模开发者需求。</p>
+
+    <h2>为什么Deepseek API和ChatGPT API如此受欢迎？</h2>
+    <p>根据最新数据，<strong>Deepseek API</strong>和<strong>ChatGPT API</strong>搜索量分别高达66.9k和8.4k，成为开发者最热门的AI API选择。这是因为：</p>
+    <ul>
+        <li>Deepseek以其出色的代码能力和中文理解能力赢得中国开发者青睐</li>
+        <li>ChatGPT凭借全面的功能和持续的模型更新保持行业领先地位</li>
+        <li>这些API通过简易中转服务，解决了国内访问难题</li>
+    </ul>
+
+    <h2>立即开始使用简易 API中转服务</h2>
+    <p>访问<a href="https://jeniya.cn" target="_blank">https://jeniya.cn</a>，免费注册并获取API密钥，开启AI开发新时代！</p>
+    <p>如果本指南对您有所帮助，欢迎收藏本页面并分享给更多开发者！一起探索AI API的无限可能！</p>
+    <p>最后更新时间: <strong id="update-time">2025年3月26日</strong></p>
+
+    <hr>
+    </section>
+
+  <script>
+        const colors = [
+            ['#ff0080', '#7928ca'], 
+            ['#ff4d4d', '#f9cb28'], 
+            ['#7928ca', '#4c88e8'], 
+            ['#4c88e8', '#4FE2B1'], 
+            ['#ff0080', '#ff7f00']  
+        ];
+        const randomIndex = Math.floor(Math.random() * colors.length);
+        const [color1, color2] = colors[randomIndex];
+        document.documentElement.style.setProperty('--color-1', color1);
+        document.documentElement.style.setProperty('--color-2', color2);
+
+        function scrollToContent() {
+            document.getElementById('more-content').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function formatDate(date) {
+            const year = date.getFullYear();
+            const month = String(date.getMonth() + 1).padStart(2, '0');
+            const day = String(date.getDate()).padStart(2, '0');
+            return `${year}/${month}/${day}`;
+        }
+        
+        document.getElementById('curdate').textContent = formatDate(new Date());
+        document.getElementById('update-time').textContent = formatDate(new Date()).replace(/\//g, '年').replace(/(\d+)$/, '$1日');
+        
+    </script>
+</body>
+</html>
